@@ -63,6 +63,16 @@ special2{
 
 
 
+/* REGOLE DI MARGIN E PADDING */
+
+.pad-top{
+    padding-top: 30px;
+}
+
+/* REGOLE DI MARGIN E PADDING FINE */
+
+
+
 /* FINE REGOLE DI UTILITY */
 
 
@@ -88,6 +98,10 @@ aside{
     background-color: purple;
 }
 
+.container{
+   
+}
+
 .cta{
     height:80px;
     background-color: yellow;
@@ -96,6 +110,17 @@ aside{
     left: 50px;
     z-index: 99;
     width:100%;
+}
+
+.nav-bar{
+    margin-top: 100px;
+}
+
+.squares .square{
+    height: 300px;
+    width:calc(100% /2);
+    background-color: white;
+    margin: 20px;
 }
 
 
