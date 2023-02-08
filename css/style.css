@@ -98,30 +98,91 @@ aside{
     background-color: purple;
 }
 
-.container{
-   
-}
-
 .cta{
     height:80px;
     background-color: yellow;
-    position:fixed ;
+    position:fixed;
     top: 0;
     left: 50px;
     z-index: 99;
-    width:100%;
+    width:calc(100% - 50px);
 }
 
 .nav-bar{
     margin-top: 100px;
 }
 
-.squares .square{
-    height: 300px;
-    width:calc(100% /2);
-    background-color: white;
-    margin: 20px;
+.square{
+    list-style: none;
+    width: 50%;
 }
+
+.text-container{
+    border: 1px solid black;
+}
+
+.square-container{
+    margin: 20px;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+
+
+
+/* Media QUERIES */
+
+@media screen and (min-width:576px) {
+    aside{
+        width: 150px;
+    }
+
+    .content{
+        width:calc(100% - 150px)
+    }
+
+    .cta{
+        width: calc(100%-150px);
+        left: 150px;
+    }
+
+    .square{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:768px){
+
+    .square{
+        width: 25%;
+    }
+   
+}
+
+
+
+@media screen and (min-width:992px){
+
+    .square{
+        width: 25%;
+    }
+   
+}
+
+
+@media screen and (min-width:1200px){
+
+    .square{
+        width:calc(100% / 6);
+    }
+   
+}
+
+
+
+
+
+
 
 
 
