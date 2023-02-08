@@ -22,6 +22,30 @@
     overflow: scroll;
 }
 
+/* FONT SIZE */
+
+.small{
+    font-size: 13px;
+}
+
+.special1{
+    font-size: 15px;
+}
+
+.middle{
+    font-size: 18px;
+}
+
+special2{
+    font-size: 20px;
+}
+
+.big{
+    font-size: 25px;
+}
+
+/* FINE FONT SIZE */
+
 /* COLOR TEXT */
 .grey{
     color: rgb(131, 133, 138);
@@ -37,15 +61,19 @@
 
 /* FINE COLOR TEXT */
 
+
+
 /* FINE REGOLE DI UTILITY */
 
-/* REGOLE DI DEBUG */
-.debug main{
+
+
+/* REGOLE CSS */
+main{
   background-color: rgb(20, 25, 34);
   height: calc(100vh - 100px);
 }
 
- .debug footer {
+footer {
     height: 100px;
     background-color: orange;
 }
@@ -70,5 +98,5 @@ aside{
     width:100%;
 }
 
-/* FINE REGOLE DEBUG */
+
 
