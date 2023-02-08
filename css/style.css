@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE DI UTILITY */
+
+.d-flex{
+    display: flex;
+}
+
+.dir-col{
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+/* COLOR TEXT */
+.grey{
+    color: rgb(131, 133, 138);
+}
+
+.white{
+    color: white;
+}
+
+.black{
+    color: black;
+}
+
+/* FINE COLOR TEXT */
+
+/* FINE REGOLE DI UTILITY */
+
+/* REGOLE DI DEBUG */
+.debug main{
+  background-color: rgb(20, 25, 34);
+  height: calc(100vh - 100px);
+}
+
+ .debug footer {
+    height: 100px;
+    background-color: orange;
+}
+
+aside{
+    width: 50px;
+    background-color: red;
+}
+
+.content{
+    width:calc(100% - 50px);
+    background-color: purple;
+}
+
+/* FINE REGOLE DEBUG */
+
