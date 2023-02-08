@@ -18,6 +18,10 @@
     flex-wrap: wrap;
 }
 
+.scroll{
+    overflow: scroll;
+}
+
 /* COLOR TEXT */
 .grey{
     color: rgb(131, 133, 138);
@@ -54,6 +58,16 @@ aside{
 .content{
     width:calc(100% - 50px);
     background-color: purple;
+}
+
+.cta{
+    height:80px;
+    background-color: yellow;
+    position:fixed ;
+    top: 0;
+    left: 50px;
+    z-index: 99;
+    width:100%;
 }
 
 /* FINE REGOLE DEBUG */
