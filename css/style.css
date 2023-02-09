@@ -19,7 +19,7 @@
 }
 
 .scroll {
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 /* FONT SIZE */
