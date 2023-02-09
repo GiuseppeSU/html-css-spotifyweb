@@ -60,6 +60,13 @@
     list-style: none;
 }
 
+.hidden{
+    overflow-y: hidden;
+}
+
+.direction{
+    flex-direction: column;
+}
 /* FINE FONT SIZE */
 
 /* COLOR TEXT */
@@ -120,12 +127,6 @@ aside{
 
 .container{
     height: calc(100vh -100px);
-    border: 2px solid wheat;
-}
-
-.container-bottom{
-    border: 3px solid yellow;
-    height: 100px;
 }
 
 .spotify{
@@ -164,8 +165,6 @@ aside a{
     
 }
 
-
-
 .content{
     width:calc(100% - 50px);
     background-color: purple;
@@ -199,6 +198,34 @@ aside a{
     height: 200px;
     background-color: aliceblue;
 }
+
+.playlist{
+    margin-bottom: 10px;
+}
+
+
+/* SIDEBAR */
+
+.sidebar{
+    min-height: 400px;
+}
+
+.sidebar-top{
+    height: calc(100% - 100px);
+
+}
+.sidebar-bottom{
+    height: 100px;
+    background-color: blue;
+}
+
+
+
+
+
+
+
+/* SIDEBAR FINE*/
 
 
 
