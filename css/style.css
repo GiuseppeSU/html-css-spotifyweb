@@ -6,83 +6,88 @@
 
 /* REGOLE DI UTILITY */
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.dir-col{
+.dir-col {
     flex-direction: column;
 }
 
-.wrap{
+.wrap {
     flex-wrap: wrap;
 }
 
-.scroll{
+.scroll {
     overflow: scroll;
 }
 
 /* FONT SIZE */
 
-.small{
+.small {
     font-size: 13px;
 }
 
-.special1{
+.special1 {
     font-size: 15px;
 }
 
-.middle{
+.middle {
     font-size: 18px;
 }
 
-.special2{
+.special2 {
     font-size: 20px;
 }
 
-.big{
+.big {
     font-size: 25px;
 }
 
-.verybig{
+.verybig {
     font-size: 30px;
 }
 
-.align{
+.align {
     text-align: center;
 }
 
-.decoretion{
+.decoretion {
     text-decoration: none;
 }
 
-.list-style{
+.list-style {
     list-style: none;
 }
 
-.hidden{
+.hidden {
     overflow-y: hidden;
 }
 
-.direction{
+.direction {
     flex-direction: column;
 }
+
+.space{
+    justify-content: space-between;
+}
+
 /* FINE FONT SIZE */
 
 /* COLOR TEXT */
-.grey{
+.grey {
     color: rgb(131, 133, 138);
 }
 
-.white{
+.white {
     color: white;
 }
 
-.black{
+.black {
     color: black;
 }
 
-.logo-white{
+.logo-white {
     filter: white;
 }
 
@@ -92,11 +97,11 @@
 
 /* REGOLE DI MARGIN E PADDING */
 
-.pad-top{
+.pad-top {
     padding-top: 30px;
 }
 
-.general-pad{
+.general-pad {
     padding: 10px;
 }
 
@@ -110,9 +115,9 @@
 
 
 /* REGOLE CSS */
-main{
-  background-color: rgb(20, 25, 34);
-  height: calc(100vh - 100px);
+main {
+    background-color: rgb(20, 25, 34);
+    height: calc(100vh - 100px);
 }
 
 footer {
@@ -120,39 +125,39 @@ footer {
     background-color: orange;
 }
 
-aside{
+aside {
     width: 50px;
     background-color: red;
 }
 
-.container{
+.container {
     height: calc(100vh -100px);
 }
 
-.spotify{
+.spotify {
     height: 50px;
 }
 
-.icon{
+.icon {
     height: 30px;
     vertical-align: middle;
 }
 
-aside li{
+aside li {
     padding: 5px 10px;
 }
 
-aside a{
+aside a {
     text-decoration: none;
     color: white;
 }
 
-.playlist-container{
+.playlist-container {
     padding: 15px 5px;
     height: 250px;
 }
 
-.add-box{
+.add-box {
     height: 40px;
     width: 40px;
     background-color: rgb(163, 163, 163);
@@ -161,123 +166,157 @@ aside a{
     vertical-align: middle;
 }
 
-#create{
+#create {
     padding-left: 5px;
-    
+
 }
 
-.content{
-    width:calc(100% - 50px);
+.content {
+    width: calc(100% - 50px);
     background-color: purple;
 }
 
-.cta{
-    height:80px;
+.cta {
+    height: 80px;
     background-color: yellow;
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 50px;
     z-index: 99;
-    width:calc(100% - 50px);
+    width: calc(100% - 50px);
 }
 
-.nav-bar{
+.nav-bar {
     margin-top: 100px;
 }
 
-.square{
+.square {
     list-style: none;
     width: 50%;
 }
 
-.text-container{
-    border: 1px solid black;
-}
-
-.square-container{
+.square-container {
     margin: 20px;
     height: 200px;
     background-color: aliceblue;
 }
 
-.playlist{
+.playlist {
     margin-bottom: 10px;
 }
 
-.sidebar-bottom li a{
+.sidebar-bottom li a {
     padding: 5px;
 }
 
-hr{
+hr {
     width: 90%;
     margin-left: 10px;
     margin-bottom: 10px;
 }
 
-.user{
+.user {
     height: 25px;
     background-color: rgb(128, 128, 128);
     border-radius: 30px;
     padding: 2px;
     vertical-align: middle;
-    
+
 }
 
+.all-playlist li{
+    color: rgb(118, 118, 118);
 
+}
 
 /* SIDEBAR */
 
-.sidebar{
+.sidebar {
     min-height: 400px;
+    background-color: rgb(0, 0, 0);
 }
 
-.sidebar-top{
+.sidebar-top {
     height: calc(100% - 100px);
 
+
 }
-.sidebar-bottom{
+
+.sidebar-bottom {
     height: 100px;
-    background-color: blue;
+    
 }
 
 /* SIDEBAR FINE*/
+
+
+/* FOOTER */
+footer{
+    background-color: rgb(40, 40, 40);
+}
+
+.footer-left img{
+    height: 40px;
+}
+
+.footer-left ul li {
+    padding: 20px 7px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-left ul i {
+   margin-left: 10px;
+}
+   
+
+
+
+
+
+
+
+
+/* FOOTER FINE*/
 
 
 
 
 /* Media QUERIES */
 
-@media screen and (max-width:576px){
-    .sidebar-top .logo img{
+@media screen and (max-width:576px) {
+    .sidebar-top .logo img {
         display: none;
-}
+    }
 
 
-.sidebar-top .logo i{
-    display: block;
-    color: white;
-    font-size: 30px;
-    padding: 10px;
-}
+    .sidebar-top .logo i {
+        display: block;
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+    }
 
 
     .sidebar-top a {
         display: none;
     }
 
-    .playlist-container{
+    .playlist-container {
         display: none;
     }
 
-    .sidebar-bottom a{
+    .sidebar-bottom a {
         display: none;
     }
 
-    .sidebar-bottom hr{
+    .sidebar-bottom hr {
         display: none;
     }
 
-    .sidebar-bottom i{
+    .sidebar-bottom i {
         padding: 3px;
         margin-top: 30px;
     }
@@ -288,63 +327,54 @@ hr{
 
 
 @media screen and (min-width:576px) {
-    aside{
+    aside {
         width: 200px;
     }
 
-    .content{
-        width:calc(100% - 200px)
+    .content {
+        width: calc(100% - 200px)
     }
 
-    .cta{
+    .cta {
         width: calc(100%-200px);
         left: 200px;
     }
 
-    .square{
+    .square {
         width: 50%;
     }
 
-    .sidebar-top .logo i{
+    .sidebar-top .logo i {
         display: none;
-   
+
     }
 
-  
+
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
 
-    .square{
+    .square {
         width: 25%;
     }
-   
+
 }
 
 
 
-@media screen and (min-width:992px){
+@media screen and (min-width:992px) {
 
-    .square{
+    .square {
         width: 25%;
     }
-   
+
 }
 
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:1200px) {
 
-    .square{
-        width:calc(100% / 6);
+    .square {
+        width: calc(100% / 6);
     }
-   
+
 }
-
-
-
-
-
-
-
-
-
