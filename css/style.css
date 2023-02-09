@@ -36,12 +36,28 @@
     font-size: 18px;
 }
 
-special2{
+.special2{
     font-size: 20px;
 }
 
 .big{
     font-size: 25px;
+}
+
+.verybig{
+    font-size: 30px;
+}
+
+.align{
+    text-align: center;
+}
+
+.decoretion{
+    text-decoration: none;
+}
+
+.list-style{
+    list-style: none;
 }
 
 /* FINE FONT SIZE */
@@ -59,6 +75,10 @@ special2{
     color: black;
 }
 
+.logo-white{
+    filter: white;
+}
+
 /* FINE COLOR TEXT */
 
 
@@ -68,6 +88,11 @@ special2{
 .pad-top{
     padding-top: 30px;
 }
+
+.general-pad{
+    padding: 10px;
+}
+
 
 /* REGOLE DI MARGIN E PADDING FINE */
 
@@ -92,6 +117,54 @@ aside{
     width: 50px;
     background-color: red;
 }
+
+.container{
+    height: calc(100vh -100px);
+    border: 2px solid wheat;
+}
+
+.container-bottom{
+    border: 3px solid yellow;
+    height: 100px;
+}
+
+.spotify{
+    height: 50px;
+}
+
+.icon{
+    height: 30px;
+    vertical-align: middle;
+}
+
+aside li{
+    padding: 5px 10px;
+}
+
+aside a{
+    text-decoration: none;
+    color: white;
+}
+
+.playlist-container{
+    padding: 15px 5px;
+}
+
+.add-box{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(163, 163, 163);
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#create{
+    padding-left: 5px;
+    
+}
+
+
 
 .content{
     width:calc(100% - 50px);
@@ -134,16 +207,16 @@ aside{
 
 @media screen and (min-width:576px) {
     aside{
-        width: 150px;
+        width: 200px;
     }
 
     .content{
-        width:calc(100% - 150px)
+        width:calc(100% - 200px)
     }
 
     .cta{
-        width: calc(100%-150px);
-        left: 150px;
+        width: calc(100%-200px);
+        left: 200px;
     }
 
     .square{
