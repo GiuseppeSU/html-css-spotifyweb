@@ -173,17 +173,30 @@ aside a {
 
 .content {
     width: calc(100% - 50px);
-    background-color: purple;
+    background-color: rgb(20, 25, 34);
 }
 
 .cta {
     height: 80px;
-    background-color: yellow;
+    background-color: rgb(8, 11, 18);
     position: fixed;
     top: 0;
     left: 50px;
     z-index: 99;
     width: calc(100% - 50px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn{
+    width: 200px;
+    padding: 10px;
+    border:white 2px solid;
+    background-color: rgb(8, 11, 18);
+    border-radius: 30px;
+    color: white;
+    margin-right: 160px;
 }
 
 .nav-bar {
