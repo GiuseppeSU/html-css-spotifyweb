@@ -267,10 +267,24 @@ footer{
     display: flex;
 }
 
-.footer-left ul i {
-   margin-left: 10px;
+.footer-mid ul{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    list-style: none;
 }
-   
+
+
+
+.footer-mid li{
+    color: white;
+    
+    padding: 30px 15px;
+    
+}
+
+
 
 
 
