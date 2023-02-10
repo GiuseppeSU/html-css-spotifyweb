@@ -72,6 +72,18 @@
     justify-content: space-between;
 }
 
+.d-block{
+    display: block;
+}
+
+.justify{
+    justify-content: center;
+}
+
+.align-items{
+    align-items: center;
+}
+
 /* FINE FONT SIZE */
 
 /* COLOR TEXT */
@@ -268,34 +280,82 @@ footer{
     background-color: rgb(40, 40, 40);
 }
 
-.footer-left img{
-    height: 40px;
+.footer-container{
+    
+   
 }
 
-.footer-left ul li {
-    padding: 20px 7px;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.img-container{
+    width: 20%;
+   
+    padding: 0px 10px;
 }
 
-.footer-mid ul{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    list-style: none;
-    list-style: none;
+.img-container img{
+    min-width: 100%;
 }
 
+.icon-footer i{
+    margin: 0px 5px;
+}
 
+.img-container img{
+    width: 100%;
+}
 
-.footer-mid li{
+.media-icon i{
+    margin: 10px 15px;
+    font-size: 20px;
     color: white;
     
-    padding: 30px 15px;
-    
 }
+
+.player-bar{
+    width: 350px;
+    height: 10px;
+    background-color: red;
+    border-radius:20px
+}
+
+.percent{
+    width: 15%;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+.player-time, .player-total{
+    margin: 0px 10px;
+}
+
+.users-container i{
+    font-size: 15px;
+    margin: 0px 5px;
+    color: white;
+}
+
+.mini-bar{
+    width: 100px;
+    height: 10px;
+    background-color: green;
+    border-radius:20px
+}
+
+.percent2{
+    width: 15%;
+    height: 100%;
+    background-color: purple;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -347,9 +407,6 @@ footer{
         padding: 3px;
         margin-top: 30px;
     }
-
-
-
 }
 
 
