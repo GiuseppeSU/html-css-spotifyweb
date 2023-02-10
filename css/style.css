@@ -226,6 +226,10 @@ aside a {
     background-color: aliceblue;
 }
 
+.square h2{
+    margin-left: 20px;
+}
+
 .playlist {
     margin-bottom: 10px;
 }
