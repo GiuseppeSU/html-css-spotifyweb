@@ -117,6 +117,10 @@
     padding: 10px;
 }
 
+.margin{
+    margin-left: 20px;
+}
+
 
 /* REGOLE DI MARGIN E PADDING FINE */
 
@@ -215,6 +219,18 @@ aside a {
     margin-top: 100px;
 }
 
+.list-nav{
+    list-style: none;
+}
+
+.list-nav li{
+    margin: 0pc 10px;
+}
+
+.border{
+    border-bottom: 3px solid greenyellow;
+}
+
 .square {
     list-style: none;
     width: 50%;
@@ -229,6 +245,16 @@ aside a {
 .square h2{
     margin-left: 20px;
 }
+
+.square-container img{
+    height: 100%;
+}
+
+
+
+
+
+
 
 .playlist {
     margin-bottom: 10px;
@@ -317,14 +343,14 @@ footer{
 .player-bar{
     width: 350px;
     height: 10px;
-    background-color: red;
+    background-color: black;
     border-radius:20px
 }
 
 .percent{
     width: 15%;
     height: 100%;
-    background-color: yellow;
+    background-color: lightgrey;
     border-radius: 20px;
 }
 
@@ -341,14 +367,14 @@ footer{
 .mini-bar{
     width: 100px;
     height: 10px;
-    background-color: green;
+    background-color: black;
     border-radius:20px
 }
 
 .percent2{
     width: 15%;
     height: 100%;
-    background-color: purple;
+    background-color: lightgrey;
     border-radius: 20px;
 
 }
