@@ -26,9 +26,9 @@
                     <img class="general-pad spotify" src="./img/logo.svg" alt="Logo spotify">
                 </div>
                 <ul class="list-style">
-                    <li>
+                    <li class="active-link">
                         <img class="icon" src="./img/home.svg" alt="Home Spotify">
-                        <a href="#">Home</a>
+                        <a class="active" href="#">Home</a>
                     </li>
 
                     <li>
@@ -44,14 +44,15 @@
 
                 <div class="playlist-container hidden d-flex direction">
                     <div class="playlist">
-                        <ul class=" white hidden">
+                        <ul class="white">
                             <li>PLAYLIST</li>
                             <li><i class="fa-solid fa-plus add-box black big"></i>
-                                <a id="create" href="#">Create Playlist</a>
+                                <a id="create" href="#">Crea Playlist</a>
                             </li>
                     </div>
                     </ul>
-                    <ul class="all-playlist scroll">
+                    <!-- rimosso scroll -->
+                    <ul class="all-playlist">
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
@@ -62,19 +63,7 @@
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
+
                     </ul>
                 </div>
 
@@ -84,12 +73,12 @@
                 <ul class="list-bottom">
                     <li>
                         <i class="fa-solid fa-circle-down grey"></i>
-                        <a href="#">Istalla app</a>
+                        <a href="#">Installa app</a>
                     </li>
                     <hr />
                     <li>
                         <img class="user" src="img/profile.svg" alt="">
-                        <a href="#">Jonh Doe</a>
+                        <a class="white" href="#">Jonh Doe</a>
                     </li>
                 </ul>
             </section>
@@ -103,7 +92,10 @@
 
             <nav class="nav-bar white">
                 <ul class="grey d-flex justify align-items list-nav">
-                    <li class="border">In evidenza</li>
+                    <li class="align">
+                        <div class="white">In evidenza</div>
+                        <div class="nav-active-link"></div>
+                    </li>
                     <li>Podcast</li>
                     <li>Classifiche</li>
                     <li>Generi e Mood</li>
@@ -113,72 +105,82 @@
 
             </nav>
 
-            <section id="recent-play">
+            <section id="recent-play ">
                 <h1 class="white big pad-top margin">Recently Played</h1>
-                <ul class="squares d-flex wrap">
+                <ul class="squares d-flex align wrap">
                     <li class="square">
                         <div class="square-container">
                             <img src="./img/metal_lifting.jpg" alt="Metal">
-                            <i class="fa-regular fa-circle-play download"></i>
+                            <i class="play fa-solid fa-circle-play"></i>
                         </div>
-                        <h2 class="white">Heavy Metal</h2>
+                        <h2 class="middle general-pad-top white">Heavy Metal</h2>
+                        <p class="grey small general-pad">Subtitle</p>
                     </li>
                     <li class="square">
                         <div class="square-container">
                             <img src="./img/stranger.jpeg" alt="stranger things">
-
+                            <i class="play fa-solid fa-circle-play"></i>
+                            
                         </div>
-                        <h2 class="white">Stranger Things</h2>
+                        <h2 class="middle white general-pad-top">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h2>
+                        <p class="grey small general-pad">Kyle Dixon & Michael Stein</p>        
                     </li>
                     <li class="square">
                         <div class="square-container">
                             <img src="./img/aquietplace.jpeg" alt="A quiet place">
-
+                            <i class="play fa-solid fa-circle-play"></i>
                         </div>
-                        <h2 class="white">A Quiet Place</h2>
+                        <h2 class="middle white general-pad-top">A quiet place</h2>
+                        <p class="grey small general-pad">Subtitle</p>
+
                     </li>
 
                     <li class="square">
                         <div class="square-container">
                             <img src="./img/split.jpeg" alt="Split">
-
+                            <i class="play fa-solid fa-circle-play"></i>
                         </div>
-                        <h2 class="white">Split</h2>
+                        <h2 class="middle white general-pad-top">Split</h2>
+                        <p class="grey small general-pad">Subtitle</p>
+
                     </li>
                     <li class="square">
                         <div class="square-container">
                             <img src="./img/cure.jpeg" alt="cure for wellnes">
-
+                            <i class="play fa-solid fa-circle-play"></i>
                         </div>
-                        <h2 class="white">A Cure for Wellness</h2>
+                        <h2 class="middle white general-pad-top">A Cure for Wellness</h2>
+                        <p class="grey small general-pad">Subtitle</p>
                     </li>
                     <li class="square">
                         <div class="square-container">
                             <img src="./img/sinister.jpeg" alt="Sinister">
-
+                            <i class="play fa-solid fa-circle-play"></i>
                         </div>
-                        <h2 class="white">Sinister</h2>
+                        <h2 class="middle white general-pad-top">Sinister</h2>
+                        <p class="grey small general-pad">Subtitle</p>
                     </li>
                 </ul>
             </section>
 
             <section id="create">
                 <h1 class="white big pad-top margin">Creato per Jonh Doe</h1>
-                <h2 class="grey small margin">Più ascolti, e più i tuoi brani saranno accurati</h2>
-                <ul class="squares d-flex wrap">
+                <h2 class="grey small general-pad-top general-pad-bot margin">Più ascolti, e più i tuoi brani saranno accurati</h2>
+                <ul class="squares d-flex align wrap">
                     <li class="square">
                         <div class="square-container">
                             <img src="./img/radar.jpeg" alt="radar">
-
+                            <i class="play fa-solid fa-circle-play"></i>
                         </div>
-                        <h2 class="white">Relase Radar</h2>
+                        <h2 class="middle white general-pad-top">Relase Radar</h2>
                     </li>
                     <li class="square">
                         <div class="square-container">
                             <img src="./img/mixdaily.jpeg" alt="daily mix">
+                            <i class="play fa-solid fa-circle-play"></i>
 
                         </div>
-                        <h2 class="white">Daily mix 1</h2>
+                        <h2 class="middle white general-pad-top">Daily mix 1</h2>
                     </li>
                   
                 </ul>
@@ -186,26 +188,27 @@
 
             <section id="popular">
                 <h1 class="white big pad-top margin">Artisti più popolari</h1>
-                <h2 class="grey small margin">Più ascolti, e più i tuoi brani saranno accurati</h2>
+                <h2 class="grey small general-pad-top general-pad-bot margin">Più ascolti, e più i tuoi brani saranno accurati</h2>
                 <ul class="squares d-flex wrap">
-                    <li class="square">
-                        <div class="square-container">
+                    <li class="circle-main-container">
+                        <div class="circle-container">
+                            <img src="./img/youg.jpeg" alt="del rey">
+                            <i class="play fa-solid fa-circle-play"></i>
+                        </div>
+                    </li>
+                    <li class="circle-main-container">
+                        <div class="circle-container">
                             <img src="./img/einaudi.jpeg" alt="einaudi">
-
+                            <i class="play fa-solid fa-circle-play"></i>
                         </div>
                     </li>
-                    <li class="square">
-                        <div class="square-container">
-                            <img src="./img/split.jpeg" alt="Split">
-
-                        </div>
-                    </li>
+                    
                 </ul>
             </section>
         </div>
     </main>
 
-    <footer class="d-flex">
+    <footer class="d-flex space">
         
         <div class="footer-container d-flex align-items">
             
@@ -218,16 +221,16 @@
                 <h3 class="grey small">Nome Brano</h3>
             </div>
 
-            <div class="icon-footer d-flex wrap">
-                <div><i class="fa-regular fa-heart grey"></i></div>
-                <div><i class="fa-regular fa-file grey"></i></div>
+            <div class="icon-footer d-flex align wrap">
+                <i class="fa-regular fa-heart grey"></i>
+                <i class="fa-regular fa-file grey"></i>
             </div>
         </div>
         
         
         <div class="player-container">
             
-            <div class="media-icon d-flex align-itemsv justify">
+            <div class="media-icon d-flex align-items justify">
                 <div><i class="fa-solid fa-shuffle"></i></div>
                 <div><i class="fa-solid fa-backward"></i></div>
                 <div><i class="fa-solid fa-circle-play"></i></div>
@@ -235,7 +238,7 @@
                 <div><i class="fa-solid fa-repeat"></i></div>
             </div>
             
-            <div class="player d-flex align-items ">
+            <div class="player d-flex align-items space">
                 <div class="player-time">0:25</div>
                 <div class="player-bar">
                     <div class="percent">
@@ -247,7 +250,7 @@
         </div>
 
         <div class="users-container d-flex align-items">
-            <div class="media-icon2 d-flex">
+            <div class="media-icon d-flex">
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-desktop"></i>
                 <i class="fa-solid fa-volume-high"></i>

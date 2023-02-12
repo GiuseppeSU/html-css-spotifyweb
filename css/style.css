@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 /* REGOLE DI UTILITY */
@@ -113,8 +114,20 @@
     padding-top: 30px;
 }
 
+.pad-bot {
+    padding-bottom: 30px;
+}
+
 .general-pad {
     padding: 10px;
+}
+
+.general-pad-top {
+    padding-top: 10px;
+}
+
+.general-pad-bot {
+    padding-bottom: 10px;
 }
 
 .margin{
@@ -146,19 +159,26 @@ aside {
     background-color: red;
 }
 
-.list-style a:hover{
-    color:white;
-    cursor: pointer;
+.list-style a:hover, .list-style a.active{
+    color:white
+}
+.active-link {
+    border-left: 4px solid greenyellow;
 }
 
-.playlist a:hover{
+
+/* .playlist a:hover{
     color: white;
+} */
+
+.playlist li:hover a, .playlist li:hover i{
     cursor: pointer;
+    color: white;
 }
 
 .all-playlist li:hover{
-    color: white;
     cursor: pointer;
+    color: white;
 }
 
 .container {
@@ -185,7 +205,7 @@ aside a {
 
 .playlist-container {
     padding: 15px 5px;
-    height: 250px;
+    height: 300px;
 }
 
 .add-box {
@@ -204,7 +224,6 @@ aside a {
 
 .sidebar-bottom .list-bottom a:hover{
     color: white;
-    cursor: pointer;
 }
 
 .content {
@@ -231,12 +250,12 @@ aside a {
     background-color: rgb(8, 11, 18);
     border-radius: 30px;
     color: white;
-    
+    cursor: pointer;
+    width: 250px;
 }
 
 .cta .btn:hover{
-    scale: 1.3;
-    cursor: pointer;
+    scale: 1.1;
 
 }
 
@@ -244,17 +263,27 @@ aside a {
     margin-top: 100px;
 }
 
+.nav-bar .nav-active-link {
+    background-color: greenyellow;
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+    margin: 2px auto;
+    padding-top: 5px;
+}
+
 .list-nav{
     list-style: none;
 }
 
 .list-nav li{
-    margin: 0pc 5px;
+    margin: 0px 5px;
+    height: 30px;
 }
 
 .nav-bar li:hover{
-    color: white;
     cursor: pointer;
+    color: white;
 
 }
 
@@ -266,31 +295,41 @@ aside a {
     list-style: none;
     width: 50%;
 }
+.circle-main-container {
+    list-style: none;
+    width: auto;
+    margin-right: 10px;
+}
 
-.square-container {
+.square-container, .circle-container {
+    position: relative;
     margin: 5px;
     height: 200px;
-    position: relative;
+    width: 200px;
 }
 
-.square-container i{
-    color: white;
+.square-container:hover, .circle-container:hover {
+    cursor: pointer;
+}
+
+.square-container i.play, .circle-container i.play {
     font-size: 50px;
-    position: absolute;
-    top: 75px;
-    left: 80px;
-    display: none;
-
+    color: white;
+    position: absolute; 
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    visibility:hidden;
 }
 
 
-
-.square-container i:hover{
-    display: block;
+.square-container:hover i.play, .circle-container:hover i.play{
+    
+    visibility: visible;
 }
 
-
-
+.square-container:hover img, .circle-container:hover img{
+    filter: brightness(30%);
+}
 
 .square h2{
     margin-left: 20px;
@@ -298,6 +337,12 @@ aside a {
 
 .square-container img{
     height: 100%;
+}
+
+.circle-container img{
+    display: block;
+    height: 200px;
+    border-radius: 50%;
 }
 
 .playlist {
@@ -343,6 +388,7 @@ hr {
 
 .sidebar-bottom {
     height: 100px;
+    
 }
 
 /* SIDEBAR FINE*/
@@ -352,10 +398,6 @@ hr {
 footer{
     background-color: rgb(40, 40, 40);
     
-}
-
-.footer-container{
-    width: 20%;
 }
 
 
@@ -371,7 +413,8 @@ footer{
 }
 
 .icon-footer i{
-    margin: 0px 5px;
+    margin: 5px 15px;
+    width: 100%;
 }
 
 .icon-footer i:hover{
@@ -385,14 +428,13 @@ footer{
 
 .player-container{
     margin-right: 40px;
-    width: 60%;
+    width: 50%;
 }
 
 .media-icon i{
     margin: 10px 15px;
     font-size: 20px;
     color: grey;
-    cursor: pointer;
     
 }
 
@@ -401,28 +443,18 @@ footer{
     cursor: pointer;
 }
 
-.media-icon2 i{
-    color: grey;
-    
+footer .users-container .media-icon i{
+    font-size: 12px;
+    color: lightgrey;
 }
 
-.media-icon2 i:hover{
+footer .users-container .media-icon i:hover{
     color: white;
     cursor: pointer;
 }
 
-.users-container{
-    width: 20%;
-}
-
-.player-time, .player-total{
-    width: 10%;
-}
-
-
-
 .player-bar{
-    width: 100%;
+    width: 85%;
     height: 10px;
     background-color: black;
     border-radius:20px
@@ -442,33 +474,33 @@ footer{
     border-radius: 50%;
     position: absolute;
     top: -2px;
-    right:0px ;
+    left:17px ;
 
 }
 
 .circle:hover{
     background-color: limegreen ;
-    cursor: pointer;
 }
 
   .percent:hover{
-    background-color:limegreen;
-    cursor: pointer;
+    background-color:limegreen
 }
 
 .player-time, .player-total{
     margin: 0px 10px;
+    color: lightgrey;
 }
 
-
+.users-container {
+    margin-right: 10px;
+}
 
 .users-container i{
-    font-size: 15px;
-    margin: 0px 10px;
+    margin: 0px 3px;
 }
 
 .mini-bar{
-    width: 50%;
+    width: 70px;
     height: 10px;
     background-color: black;
     border-radius:20px;
@@ -488,16 +520,20 @@ footer{
     border-radius: 50%;
     position: absolute;
     top: -2px;
-    left: 35px;
+    left: 15px;
 }
 
 .circle2:hover{
     background-color: limegreen ;
-    cursor: pointer;
 }
 
   .percent2:hover{
-    background-color:limegreen;
+    background-color:limegreen
+}
+
+.container-text .grey:hover {
+    text-decoration: underline;
+    color:white;
     cursor: pointer;
 }
 
@@ -560,9 +596,13 @@ footer{
         margin-top: 30px;
     }
 
-   
+    .users-container .mini-bar{
+        display: none;
+    }
 
-    
+    .footer-container .container-text{
+        display: none;
+    }
 
    
   
