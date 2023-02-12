@@ -350,6 +350,10 @@ footer{
     margin: 0px 5px;
 }
 
+.icon-footer i:hover{
+    color: white;
+}
+
 .img-container img{
     width: 100%;
 }
@@ -361,9 +365,23 @@ footer{
 .media-icon i{
     margin: 10px 15px;
     font-size: 20px;
-    color: white;
+    color: grey;
     
 }
+
+.media-icon i:hover{
+    color: white;
+}
+
+.media-icon2 i{
+    color: grey;
+}
+
+.media-icon2 i:hover{
+    color: red;
+}
+
+
 
 .player-bar{
     width: 85%;
